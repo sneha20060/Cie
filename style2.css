@@ -1,0 +1,19 @@
+body {
+    background-color: pink;
+    color: black;
+    font-family: "Courier New", monospace;
+}
+h2 {
+    color: orange;
+}
+.highlight {
+    background-color: lightblue;
+    border: 2px solid red;
+}
+h2+hr{
+border:0;
+height:1px;
+background-color:#4cAP50;
+margin:10px 0;
+}
+

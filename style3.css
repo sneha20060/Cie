@@ -1,0 +1,17 @@
+body {
+    background-color: yellow;
+    color: black;
+    font-family:  Arial, sans-serif;
+}
+h2 {
+    color: red;
+}
+.highlight {
+    background-color: lightgreen;
+    border: 2px solid black;
+}
+div > span {
+color: #009688;
+font-style: italic;
+font-size:18px;
+}
