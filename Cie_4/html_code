@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scholarship Registration</title>
+  <style>
+    /* Basic page styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    }
+
+    /* Centered form box */
+    .form-box {
+      background-color: #fff;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Form title */
+    h2 {
+      text-align: center;
+      color: #4CAF50;
+      margin-bottom: 25px;
+    }
+
+    /* Labels and inputs */
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    /* Radio buttons grouped inline */
+    .radio-group {
+      margin-bottom: 20px;
+    }
+
+    .radio-group label {
+      margin-right: 15px;
+      font-weight: normal;
+    }
+
+    /* Submit and reset buttons */
+    .buttons {
+      text-align: center;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Scholarship Registration</h2>
+    
+    <form action="#" method="post" enctype="multipart/form-data">
+      <!-- Personal Details -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="fullname" placeholder="Your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@gmail.com" required>
+
+      <label>Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+
+      <!-- Scholarship Section -->
+      <label>Applying for Scholarship?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="apply" value="yes" required> Yes</label>
+        <label><input type="radio" name="apply" value="no"> No</label>
+      </div>
+
+      <label for="type">Scholarship Type:</label>
+      <select id="type" name="scholarship_type">
+        <option value="">-- Select Type --</option>
+        <option value="merit">Merit-Based</option>
+        <option value="need">Need-Based</option>
+        <option value="sports">Sports</option>
+      </select>
+
+      <label for="income">Family Income (₹):</label>
+      <input type="text" id="income" name="income" placeholder="e.g. 200000">
+
+      <label for="document">Upload Document:</label>
+      <input type="file" id="document" name="document" accept=".pdf,.jpg,.png">
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
