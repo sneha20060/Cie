@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMVITM College Times</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fdfaf6;
+      color: #222;
+      font-family: 'Lora', serif;
+      line-height: 1.8;
+      padding: 30px 15px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      border-bottom: 3px solid #111;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #555;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    article {
+      text-align: justify;
+    }
+
+    article h3 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+      color: #000;
+    }
+
+    .date {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    article p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 20px;
+      font-size: 0.95rem;
+      color: #555;
+      border-top: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .section h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>SMVITM College Times</h1>
+      <p class="tagline">Your Trusted Source for Campus News</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#breaking">Breaking News</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#sports">Sports</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <!-- Breaking News -->
+      <section id="breaking" class="section">
+        <h2>🔴 Breaking News</h2>
+        <div class="article-grid">
+          <article>
+            <h3>SMVITM Granted Autonomous Status</h3>
+            <p class="date">Published: Oct 2, 2025</p>
+            <p>SMVITM has officially been declared an autonomous institution. This recognition marks a significant milestone in the college’s journey, offering academic freedom, improved curriculum flexibility, and enhanced research opportunities. Students and faculty celebrated the announcement with pride and enthusiasm.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Events -->
+      <section id="events" class="section">
+        <h2>🎉 Events Conducted</h2>
+        <div class="article-grid">
+          <article>
+            <h3>Sharada Pooja Celebrated with Devotion</h3>
+            <p class="date">Date: Sep 30, 2025</p>
+            <p>The college community came together to celebrate Sharada Pooja with traditional fervor. Students and staff took part in rituals and cultural programs that highlighted devotion and unity.</p>
+          </article>
+
+          <article>
+            <h3>National Level Hackathon Coming Soon</h3>
+            <p class="date">Announcement: Oct 2, 2025</p>
+            <p>SMVITM will soon host a National Level Hackathon welcoming participants from across India. The event aims to encourage innovation, coding skills, and collaboration among tech enthusiasts. Registrations will open shortly.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sports -->
+      <section id="sports" class="section">
+        <h2>🏅 Sports Highlights</h2>
+        <div class="article-grid">
+          <article>
+            <h3>Tug of War Event Brings Thrill to Campus</h3>
+            <p class="date">Date: Sep 28, 2025</p>
+            <p>A highly energetic tug of war competition was conducted at SMVITM. In the boys’ category, the Mechanical Engineering team emerged victorious, while the AIML (Artificial Intelligence & Machine Learning) department clinched the win in the girls’ category. The crowd cheered both teams for their strength and spirit.</p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 SMVITM College Times. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
